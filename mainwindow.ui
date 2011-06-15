@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>517</width>
+    <height>338</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabArea">
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>517</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAutomaten">
+    <property name="title">
+     <string>Automaten</string>
+    </property>
+    <widget class="QMenu" name="menuEine_Dimension">
+     <property name="title">
+      <string>Eine Dimension</string>
+     </property>
+     <addaction name="actionECA"/>
+    </widget>
+    <widget class="QMenu" name="menuZwei_Dimensionen_2">
+     <property name="title">
+      <string>Zwei Dimensionen</string>
+     </property>
+     <addaction name="actionSpiel_des_Lebens_2"/>
+     <addaction name="actionMinority_2"/>
+    </widget>
+    <addaction name="menuEine_Dimension"/>
+    <addaction name="menuZwei_Dimensionen_2"/>
+   </widget>
+   <widget class="QMenu" name="menuTestl_ufe">
+    <property name="title">
+     <string>Testläufe</string>
+    </property>
+    <widget class="QMenu" name="menuEine_Dimension_2">
+     <property name="title">
+      <string>Eine Dimension</string>
+     </property>
+     <addaction name="actionECA_2"/>
+    </widget>
+    <widget class="QMenu" name="menuZwei_Dimensionen">
+     <property name="title">
+      <string>Zwei Dimensionen</string>
+     </property>
+     <addaction name="actionSpiel_des_Lebens"/>
+     <addaction name="actionMinority"/>
+    </widget>
+    <addaction name="menuEine_Dimension_2"/>
+    <addaction name="menuZwei_Dimensionen"/>
+   </widget>
+   <widget class="QMenu" name="menuDatei">
+    <property name="title">
+     <string>Bearbeiten</string>
+    </property>
+    <addaction name="actionEinstellungen"/>
+    <addaction name="actionExportieren"/>
+   </widget>
+   <addaction name="menuDatei"/>
+   <addaction name="menuAutomaten"/>
+   <addaction name="menuTestl_ufe"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionEinstellungen">
+   <property name="text">
+    <string>Einstellungen</string>
+   </property>
+  </action>
+  <action name="actionECA">
+   <property name="text">
+    <string>ECA</string>
+   </property>
+  </action>
+  <action name="actionECA_2">
+   <property name="text">
+    <string>ECA</string>
+   </property>
+  </action>
+  <action name="actionSpiel_des_Lebens">
+   <property name="text">
+    <string>Spiel des Lebens</string>
+   </property>
+  </action>
+  <action name="actionMinority">
+   <property name="text">
+    <string>Minority</string>
+   </property>
+  </action>
+  <action name="actionSpiel_des_Lebens_2">
+   <property name="text">
+    <string>Spiel des Lebens</string>
+   </property>
+  </action>
+  <action name="actionMinority_2">
+   <property name="text">
+    <string>Minority</string>
+   </property>
+  </action>
+  <action name="actionExportieren">
+   <property name="text">
+    <string>Exportieren</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
