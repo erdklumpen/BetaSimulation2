@@ -12,7 +12,7 @@ QVector<int> Minority::neighbourhood(QPoint pos)
 
 QVector<int> Minority::eigenNeighbourhood(QPoint pos)
 {
-    return mooreNeighbourhood(pos, m_state);
+    return mooreNeighbourhood(pos, m_state, true);
 }
 
 int Minority::rule(QVector<int> neighbours, QPoint self)

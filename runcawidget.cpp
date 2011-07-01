@@ -38,11 +38,11 @@ void RunCAWidget::runCA(int steps)
         m_ca->run();
 //        qDebug() << "step " << i << " " << m_ca->history()->getActivity().last().y();
 
-        if(i % 1000 == 0)
-        {
+//        if(i % 100 == 0)
+//        {
             draw(j + 1);
             ++j;
-        }
+//        }
     }
 }
 
@@ -97,5 +97,6 @@ void RunCAWidget::draw(int row)
         }
     }
 
-    ui->graphicsView->scene()->addRect(0, 0+yOffset, state->xSize() * 10, state->ySize() * 10, QPen(Qt::red));
+    if(!state->ySize() == 1)
+        ui->graphicsView->scene()->addRect(0, 0+yOffset, state->xSize() * 10, state->ySize() * 10, QPen(Qt::red));
 }
